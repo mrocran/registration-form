@@ -16,14 +16,14 @@
         <label for="first-name">Enter Your First Name: <input id="first-name" type="text" name="first-name" required ></label>
         <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" name="last-name" required ></label>
         <label for="email">Enter Your Email: <input id="email" type="email" name="email" required></label>
-        <label for="new-password">Enter Your Password: <input id="password" type="password" name="password" required></label>
+        <label for="new-password">Enter Your Password: <input id="password" type="password" name="password" pattern="[a-z0-5]{8,}" required></label>
     </fieldset>
 
     <!-- SECTION TWO - ACCOUNT INFO -->
     <fieldset>
         <legend>Account Type (required)</legend>
-        <label for="personal-account"><input type="radio" name="account-type" checked> Personal</label>
-        <label for="business-account"><input type="radio" name="account-type" > Business</label>
+        <label for="personal-account"><input type="radio" class="inline" name="account-type" checked> Personal</label>
+        <label for="business-account"><input type="radio" class="inline" name="account-type" > Business</label>
     </fieldset>
 
     <!-- SECTION THREE - PERSONAL INFO-->
@@ -33,16 +33,16 @@
         <label for="referrer" >How did you hear about us:
             <select id="referrer" name="referrer">
                 <option value="">(select one)</option>
-                <option value="1">BSCG News</option>
-                <option value="2">BSCG YouTube Channel</option>
-                <option value="3">BSCG Forum</option>
+                <option value="1">Codecrest Academy News</option>
+                <option value="2">Codecrest Academy YouTube Channel</option>
+                <option value="3">Codecrest Academy Forum</option>
                 <option value="4">Other</option>
               </select>
         </label>
         <label for="bio">Tell us about yourself: 
-            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I love coding at the beach..."></textarea>
+            <textarea id="bio" name="bio" rows="4" cols="30" placeholder="I love coding at the beach..."></textarea>
         </label>
-        <label for="terms-conditions" ><input id="terms-conditions" name="terms" type="checkbox"> I accept the <a href="#">terms and conditions</a></label>
+        <label for="terms-conditions" ><input id="terms-conditions" class="inline" name="terms" type="checkbox"> I accept the <a href="#">terms and conditions</a></label>
     </fieldset>
     
     <!-- SUBMIT BUTTON-->
