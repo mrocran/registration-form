@@ -1,12 +1,12 @@
 # Registration Form
-This repository showcases a recreated registration form inspired by a FreeCodeCamp project. It is a simple sign up page for Business Strategy Consulting Group. 
+This repository showcases a recreated registration form inspired by a FreeCodeCamp project.
 
 # Live Demo
 For a sneak peek at the registration form, visit [live demo]().
 
 # Project Details
 This project is part of my commitment to learn and master responsive web designing.
-The project was built with HTML(Knowledge of HTML forms and control of data types users can type into the form) and CSS.  
+The project was built with HTML and CSS.  
 * The [index.html](./index.html) file contains the structure of the registration form.  
 * The [styles.css](./styles.css) file provides the styling for the registration form.
 
