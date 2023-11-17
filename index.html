@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Fill out this form with the required information</p>
+
+    <form action="#" method="post">
+        <!-- SECTION ONE - LOGIN INFO -->
+    <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" type="text" name="first-name" required ></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" name="last-name" required ></label>
+        <label for="email">Enter Your Email: <input id="email" type="email" name="email" required></label>
+        <label for="new-password">Enter Your Password: <input id="password" type="password" name="password" pattern="[a-z0-5]{8,}" required></label>
+    </fieldset>
+
+    <!-- SECTION TWO - ACCOUNT INFO -->
+    <fieldset>
+        <legend>Account Type (required)</legend>
+        <label for="personal-account"><input type="radio" class="inline" name="account-type" checked> Personal</label>
+        <label for="business-account"><input type="radio" class="inline" name="account-type" > Business</label>
+    </fieldset>
+
+    <!-- SECTION THREE - PERSONAL INFO-->
+    <fieldset>
+        <label for="profile-picture" >Upload a profile picture: <input id="profile-picture" type="file" name="profile-picture" ></label>
+        <label for="age" >Input your age (years): <input id="age" type="number" min="13" max="100" name="age" ></label>
+        <label for="referrer" >How did you hear about us:
+            <select id="referrer" name="referrer">
+                <option value="">(select one)</option>
+                <option value="1">Codecrest Academy News</option>
+                <option value="2">Codecrest Academy YouTube Channel</option>
+                <option value="3">Codecrest Academy Forum</option>
+                <option value="4">Other</option>
+              </select>
+        </label>
+        <label for="bio">Tell us about yourself: 
+            <textarea id="bio" name="bio" rows="4" cols="30" placeholder="I love coding at the beach..."></textarea>
+        </label>
+        <label for="terms-conditions" ><input id="terms-conditions" class="inline" name="terms" type="checkbox"> I accept the <a href="#">terms and conditions</a></label>
+    </fieldset>
+    
+    <!-- SUBMIT BUTTON-->
+    <input type="submit" value="Submit" >
+    </form>
+</body>
+</html>
